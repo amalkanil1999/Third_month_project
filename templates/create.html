@@ -1,0 +1,37 @@
+{% extends "base.html" %}{% block content %}{% load static %}
+
+<section id="spotlight">
+    <h3>Add new post</h3>
+    <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-field">
+                <label for="id_title" class="subheads" >
+                    Title
+                </label>
+                <input type="text" name="title" class="input" maxlength="255" required id="id_title">
+            </div>
+            <div class="form-field">
+                <label class="subheads" for="id_short_description">
+                    Short description
+                </label>
+                <textarea name="short_description" cols="40" rows="10" class="input" required id="id_short_description">
+                Hello</textarea>
+            </div>
+            <div class="form-field">
+                <label class="subheads" for="id_tags">
+                    Tags (Comma seperated)
+                </label>
+                <input type="text" name="tags"  class="input" required id="id_tags">
+            </div>
+            <div class="form-field">
+                <label for="id_featured_image" class="subheads" >
+                    Featured image
+                </label>
+                <input type="file" name="featured_image" accept="image/*" required id="id_featured_image">
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Submit" />
+            </div>
+    </form>
+</section>
+
+{% endblock %}

@@ -384,3 +384,154 @@ header a.login {
     font-weight: 700;
     color: #4f5757;
 }
+#spotlight h3 {
+    font-size: 30px;
+    margin-bottom: 2%;
+    color: #000;
+    font-weight: 700;
+    display: inline-block;
+}
+form div.form-field {
+    margin-bottom: 30px;
+}
+#spotlight form div.title {
+    position: relative;
+    width: 100%;
+    border: 2px solid #949494;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 3%;
+}
+#spotlight form div.title input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3f3f3f;
+}
+#spotlight form div.title label {
+    position: absolute;
+    top: -15%;
+    padding: 2px 15px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    left: 3%;
+    border-radius: 15px;
+    text-align: center;
+}
+#spotlight form label.subheads {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+#spotlight form div.description {
+    width: 100%;
+    border: 2px solid #949494;
+    border-radius: 6px;
+    margin-bottom: 3%;
+}
+#spotlight form div.description div.top {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #949494;
+    padding: 10px;
+}
+#spotlight form div.description div.top div.paragraph {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-items: center;
+    border-right: 2px solid #949494;
+    padding: 10px 20px;
+}
+#spotlight form div.description div.top div.paragraph p {
+    color: #3f3f3f;
+    font-weight: 700;
+}
+#spotlight
+    form
+    div.description
+    div.top
+    div.paragraph
+    span.arrow {
+    transform: rotate(180deg);
+    width: 15px;
+}
+#spotlight
+    form
+    div.description
+    div.top
+    div.paragraph
+    span.arrow
+    img {
+    filter: invert(1);
+}
+#spotlight form div.description textarea {
+    width: 100%;
+    font-size: 20px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+#spotlight form div.description p.bottom {
+    border-top: 2px solid #949494;
+    padding: 20px 30px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+#spotlight form .input {
+    border: 2px solid #949494;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3f3f3f;
+    border-radius: 10px;
+}
+#spotlight form label.checkbox {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-items: center;
+}
+#spotlight form label.checkbox span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6c6c6c;
+}
+#spotlight form label.checkbox input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ac07d;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+#spotlight form input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+#spotlight form input[type="checkbox"] {
+    margin-right: 18px;
+    cursor: pointer;
+}
+#spotlight form input[type="submit"] {
+    background-color: hsla(54, 66%, 33%, 0.938);
+    width: 10%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#spotlight form label {
+    color: #3f3f3f;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}

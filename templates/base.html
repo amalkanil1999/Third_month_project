@@ -14,7 +14,7 @@
         <section class="wrapper">
             <header>
                 <h1>
-                    <a href="# web:index">
+                    <a href="{% url 'web:index' %}">
                         <img
                             src="{% static './images/logo.svg' %}"
                             alt="Logo"
@@ -22,11 +22,11 @@
                     </a>
                 </h1>
                 <div>
-                    <a href="#" class="login">Add</a>
+                    <a href="{% url 'web:create'  %}" class="login">Add</a>
                     <a href="#" class="login">Favourites</a>
-                    <a href="#" class="login"> Login </a>
+                    <a href="#" class="login">Login</a>
                 <div>
-            </header>
+            </header> 
 
             {% block content %}
             {% endblock %}

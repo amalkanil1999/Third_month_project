@@ -14,3 +14,10 @@ def detailed(request):
         "title": "CLOTHING | detailed"
     }
     return render(request,'detailed.html',context=context)
+
+
+def create(request):
+    context={
+        "title": "Create"
+    }
+    return render(request,'create.html',context=context)
