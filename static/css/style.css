@@ -88,7 +88,9 @@ br.clear {
     font-weight: normal;
     src: local("Gordita Bold"), url("../Gordita Bold.woff") format("woff");
 }
-#sorting,
+#sorting{
+
+}
 #single-page-home {
     padding: 20px 0 50px;
     position: relative;
@@ -343,7 +345,7 @@ header a.login {
     margin-bottom: 0;
 }
 #products ul li div.blog-image {
-    width: 80%;
+    width: 85%;
     margin-bottom: 20px;
 }
 #products ul li div.blog-image img{
@@ -534,4 +536,84 @@ form div.form-field {
     cursor: pointer;
     display: block;
     margin-bottom: 10px;
+}
+#single-page-spotlight { 
+
+}
+
+#single-page-spotlight .detailed { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#single-page-spotlight .detailed .left { 
+    width: 30%;
+}
+
+#single-page-spotlight .detailed .left .mainimage { 
+    width: 70%;
+
+}
+
+#single-page-spotlight .detailed .left .mainimage img { 
+    width: 100%;
+    display: block;
+
+}
+
+#single-page-spotlight .detailed .right { 
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#single-page-spotlight .detailed .right .top { 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+
+#single-page-spotlight .detailed .right .top .category {
+   
+}
+
+#single-page-spotlight .detailed .right .top .category span { 
+    font-size: 15px;
+}
+
+#single-page-spotlight .detailed .right .top .time { 
+
+}
+#single-page-spotlight .detailed .right .top a.delete{
+    background-color: hsla(0, 90%, 48%, 0.938);
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+}
+#single-page-spotlight .detailed .right .top .time span { 
+    font-size:15px;
+}
+
+#single-page-spotlight .detailed .right .middle { 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#single-page-spotlight .detailed .right .middle h3 { 
+font-size: 34px;
+}
+
+#single-page-spotlight .detailed .right .bottom { 
+    
+}
+
+#single-page-spotlight .detailed .right .bottom p { 
+font-size: 20px;
 }

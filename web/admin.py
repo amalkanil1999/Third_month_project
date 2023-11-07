@@ -9,7 +9,7 @@ admin.site.register(Tags)
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title','image','description',)
+    list_display = ('title','id','description',)
 
 admin.site.register(Product,ProductAdmin)
 

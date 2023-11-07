@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
-    <link rel="stylesheet"href="{% static './css/style.css' %}"type="text/css"/>
-    <link rel="icon" type="{% static 'image/png' %}" sizes="32x32" href="{% static './images/logo.svg' %}"
-/>
-</head>
+    <link rel="stylesheet" href="{% static './css/style.css' %}" type="text/css"/>
+    <link rel="icon" type="{% static 'image/png' %}" sizes="32x32" href="{% static './images/logo.svg' %}"/>
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.css' %}">
 <body>
     <section id="home">
         <section class="wrapper">
@@ -23,7 +23,6 @@
                 </h1>
                 <div>
                     <a href="{% url 'web:create'  %}" class="login">Add</a>
-                    <a href="#" class="login">Favourites</a>
                     <a href="#" class="login">Login</a>
                 <div>
             </header> 
@@ -33,5 +32,8 @@
 
         </section>
     </section>
+	<script src="{% static 'js/jquery-3.6.4.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

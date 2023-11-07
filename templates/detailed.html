@@ -1,5 +1,35 @@
 {% extends "base.html" %}{% block content %}{% load static %}
-    <h1>avdcvjhdv</h1>
+<section id="single-page-spotlight">
+    <section class="detailed">
+            <section class="left">
+                <div class="container owl-carousel owl-theme" id="image-slider">
+                    {% for photo in product.images_set.all %}
+                    <div class="mainimage">
+                        <img src="{{photo.images.url}}" alt="" />
+                    </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <section class="right">
+                <section class="top">
+                    <div class="category">
+                        <span>{{product.category}}</span>
+                    </div>
+                    <div class="time">
+                        <span>{{product.published_date}}</span>
+                    </div>
+                    <a href="#" class="delete">Delete item</a>
+                </section>
+                <section class="middle">
+                    <h3>{{product.title}}</h3>
+                </section>
+                <section class="bottom">
+                    <p>{{product.description}}</p>
+                </section>
+            </section>
+    </section>
+</section>
 
 
 {% endblock %}

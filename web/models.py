@@ -1,4 +1,6 @@
 import uuid
+
+from django.utils import timezone
   
 from django.db import models
 
@@ -24,20 +26,23 @@ class Tags(models.Model):
 class Product(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,editable=False)
     title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='product/')
     description = models.TextField()
     category = models.ForeignKey(Category, on_delete=models.CASCADE,null=True, blank=True)
     tags = models.ManyToManyField('web.Tags')
 
     is_deleted = models.BooleanField(default=False)
+    published_date = models.DateField(default=timezone.now)
 
     def __str__(self):
         return self.title
     
 
 class Images(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE,null=True,blank=True)
-    secondary_image = models.ImageField(upload_to='product/')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True, blank=True)
+    images = models.ImageField(upload_to='product/')
+
+    def __str__(self):
+        return str(self.images)
 
     class Meta:
         verbose_name_plural = "images"
