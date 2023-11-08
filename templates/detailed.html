@@ -19,7 +19,7 @@
                     <div class="time">
                         <span>{{product.published_date}}</span>
                     </div>
-                    <a href="#" class="delete">Delete item</a>
+                    <a href="{% url 'web:delete' %}" class="delete">Delete item</a>
                 </section>
                 <section class="middle">
                     <h3>{{product.title}}</h3>
